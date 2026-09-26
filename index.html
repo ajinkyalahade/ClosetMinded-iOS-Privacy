@@ -4,18 +4,167 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ClosetMinded</title>
+<meta name="description" content="Photograph your clothes once. ClosetMinded files them, suggests outfits from what you own, packs for the forecast and sorts the washing, all on your iPhone.">
+<meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="ClosetMinded">
+<meta property="og:description" content="Get dressed from what you already own. A wardrobe app for iPhone that keeps everything on your phone.">
+<meta property="og:image" content="https://ajinkyalahade.github.io/ClosetMinded-iOS-Privacy/img/icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- The hanger from the app icon: a C hook, a short stem, a triangle. -->
+  <symbol id="hanger" viewBox="0 0 240 100">
+    <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M130.9 16.9 A12 12 0 1 0 130.9 27.1"/>
+      <path d="M120 34 V42"/>
+      <path d="M120 42 L12 96 H228 Z"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <a class="wordmark" href="./"><img src="img/icon-180.png" alt="">ClosetMinded</a>
+  <nav aria-label="Site">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
 <main>
-<h1>ClosetMinded</h1>
-<p class="meta">Your wardrobe, on your iPhone.</p>
-<p class="lead">Photograph what you own, and get outfits that suit the weather, your calendar and your colouring. No account, no ads, no tracking.</p>
-<ul>
-  <li><a href="support.html">Support</a></li>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-</ul>
-<footer>© 2026 ClosetMinded · <a href="mailto:alstartedai@gmail.com">alstartedai@gmail.com</a></footer>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Get dressed from what you already own.</h1>
+      <p class="hero-sub">Photograph your clothes once. ClosetMinded files them, suggests outfits for wherever you're going, packs for the forecast and sorts the washing, all on your iPhone.</p>
+      <div class="hero-actions">
+        <a class="button" href="mailto:alstartedai@gmail.com?subject=Tell%20me%20when%20ClosetMinded%20is%20out">Tell me when it's out</a>
+        <a href="#privacy">What happens to my photos?</a>
+      </div>
+      <p class="availability">Coming soon to the App Store, for iPhone with iOS 26.</p>
+    </div>
+    <div class="hero-phone">
+      <img src="img/closet.jpg" width="471" height="598" alt="The Closet tab: a search bar, filters for clean items, tops and bottoms, and a grid of clothing photos.">
+    </div>
+  </section>
+
+  <section class="rail-section" aria-labelledby="rail-title">
+    <div class="section-head">
+      <h2 id="rail-title">Everything your wardrobe needs, on one rail</h2>
+      <p>Closet, Butler, Outfits, Trips and Laundry. Each one works from the same clothes, so you only ever add something once.</p>
+    </div>
+    <ul class="rail">
+      <li class="rail-item">
+        <svg class="hanger" viewBox="0 0 240 100" aria-hidden="true"><use href="#hanger"/></svg>
+        <div class="rail-phone"><img src="img/butler.jpg" width="540" height="1174" loading="lazy" alt="Butler: Photograph it, and it files itself. Buttons to take a photo or choose from your library."></div>
+        <h3>Butler</h3>
+        <p>Take a photo and it fills in the category, colour, formality and a name. A flat-lay of several pieces becomes several items.</p>
+      </li>
+      <li class="rail-item">
+        <svg class="hanger" viewBox="0 0 240 100" aria-hidden="true"><use href="#hanger"/></svg>
+        <div class="rail-phone"><img src="img/outfits.jpg" width="540" height="1174" loading="lazy" alt="Outfits: Where are you going? Occasions including casual outing, work, date night, wedding guest, beach and gym."></div>
+        <h3>Outfits</h3>
+        <p>Pick where you're going and get looks put together from your own clothes, with the missing piece named when there's a gap.</p>
+      </li>
+      <li class="rail-item">
+        <svg class="hanger" viewBox="0 0 240 100" aria-hidden="true"><use href="#hanger"/></svg>
+        <div class="rail-phone"><img src="img/trips.jpg" width="540" height="1174" loading="lazy" alt="Trips: No trips yet. Add where you're going and we'll pack the bag from what you already own."></div>
+        <h3>Trips</h3>
+        <p>Add a destination and dates. The packing list comes from your wardrobe and the daily forecast, up to 16 days out.</p>
+      </li>
+      <li class="rail-item">
+        <svg class="hanger" viewBox="0 0 240 100" aria-hidden="true"><use href="#hanger"/></svg>
+        <div class="rail-phone"><img src="img/laundry.jpg" width="540" height="1174" loading="lazy" alt="Laundry: Nothing in the wash. Mark things dirty as you wear them and they turn up here, sorted into loads you can run."></div>
+        <h3>Laundry</h3>
+        <p>Mark things dirty as you wear them. They're sorted into loads you can actually run together.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="benefits" aria-labelledby="benefits-title">
+    <div class="section-head" style="padding:0">
+      <h2 id="benefits-title">What it changes</h2>
+      <p>No promises about minutes saved. Here's what the app actually does, and where that helps.</p>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit">
+        <h3>Less time deciding what to wear</h3>
+        <ul>
+          <li><strong>Outfits for the occasion.</strong> Work, date night, a wedding, the gym and more, from clothes you own.</li>
+          <li><strong>Dressed for the weather.</strong> Suggestions know today's forecast for your city.</li>
+          <li><strong>Your calendar, if you like.</strong> It can spot today's wedding or client meeting. Your events never leave your phone.</li>
+          <li><strong>Packing lists built for you.</strong> From your wardrobe, against the forecast where you're going.</li>
+        </ul>
+      </div>
+      <div class="benefit">
+        <h3>Fewer things bought twice</h3>
+        <ul>
+          <li><strong>See everything you own.</strong> Search and filter across 21 categories, from shoes and bags to watches and jewellery.</li>
+          <li><strong>Gaps, named.</strong> It shows which piece your wardrobe is missing, so you shop for one thing instead of a bag of maybes.</li>
+          <li><strong>Check before you buy.</strong> Share a product page from Safari and see it judged against what's already in your closet.</li>
+          <li><strong>Colours that suit you.</strong> An optional colour profile puts the palettes that flatter you first.</li>
+        </ul>
+      </div>
+      <div class="benefit">
+        <h3>Clothes that last longer</h3>
+        <ul>
+          <li><strong>Read the care label for you.</strong> Scan it and the wash advice follows the fabric.</li>
+          <li><strong>Stain help.</strong> What to do about a stain before it sets.</li>
+          <li><strong>Cleaners and tailors nearby.</strong> Find them, and keep track of what's been dropped off.</li>
+          <li><strong>Loads that won't ruin things.</strong> Laundry keeps the reds away from the whites.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="also">Also on your iPhone: home-screen widgets, Siri and Shortcuts, Live Activities for trips and dry-cleaning pickups, and an optional Face ID lock.</p>
+  </section>
+
+  <section class="privacy-band" id="privacy" aria-labelledby="privacy-title">
+    <div class="privacy-inner">
+      <div>
+        <h2 id="privacy-title">Your wardrobe stays on your phone</h2>
+        <p>There's no ClosetMinded server to send it to. We built it that way on purpose.</p>
+        <ul class="facts">
+          <li>No account to create</li>
+          <li>No ads, no tracking, no analytics</li>
+          <li>Moves to a new iPhone with your normal backup</li>
+          <li>Erase everything from Settings in one step</li>
+        </ul>
+        <a href="privacy.html">Read the privacy policy</a>
+      </div>
+      <div class="table-scroll">
+        <table class="taggers">
+          <caption>You choose who tags your clothes</caption>
+          <tr><th scope="row">On this phone, basic</th><td>Free, instant, works offline. Recognises broad categories.</td></tr>
+          <tr><th scope="row">On this phone, better</th><td>Free and private. A one-time download of about 2 GB.</td></tr>
+          <tr><th scope="row">Claude Haiku or Sonnet</th><td>The most accurate. Uses your own Anthropic key, and your photos go to Anthropic to be tagged.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <h2>Open the wardrobe you already have.</h2>
+    <p>ClosetMinded is coming to the App Store soon. Send us a one-line email and we'll reply the day it's out.</p>
+    <a class="button" href="mailto:alstartedai@gmail.com?subject=Tell%20me%20when%20ClosetMinded%20is%20out">Tell me when it's out</a>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <span>© 2026 ClosetMinded. Requires iOS 26 on iPhone.</span>
+  <ul>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="mailto:alstartedai@gmail.com">alstartedai@gmail.com</a></li>
+  </ul>
+</footer>
+
 </body>
 </html>
